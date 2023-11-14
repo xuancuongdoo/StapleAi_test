@@ -1,5 +1,5 @@
 # Summary
-This code defines a Flask route /openai-completion that generates a completion text using the OpenAI API. It handles rate limiting, validates the request data, and logs errors to a SQLite database.
+This code defines a Flask route `/openai-completion` that generates a completion text using the OpenAI API. It handles rate limiting, validates the request data, and logs errors to a SQLite database.
 
 # Note
 Please set up env via 
@@ -33,9 +33,9 @@ curl -X POST
 - **POST /openai-completion**
 ## Flow
 
-- Check if the rate limit has been reached by calling the is_rate_limited function.
+- Check if the rate limit has been reached by calling the `is_rate_limited` function.
 
-- Validate the request data by calling the validate_prompt_data function.
+- Validate the request data by calling the `validate_prompt_data` function.
 
 - If the rate limit is exceeded or there is an error in the request data, return an error response.
 
