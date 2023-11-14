@@ -4,6 +4,8 @@ This code defines a Flask route `/openai-completion` that generates a completion
 # Note
 Please set up env via 
 
+Should also add your OPENAI_API_KEY in .env
+
 `
 python -m venv env
 `
